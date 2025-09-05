@@ -6,12 +6,14 @@ Guide to download dataset:
 - `pan12-sexual-predator-identification-training-corpus-predators-2012-05-01.txt`  
 - `pan12-sexual-predator-identification-test-corpus-2012-05-17.xml`  
 
-The model_training.py is the training file used to save the model. Once run, you'll obtain model_save
-Use these files to run pyserver.py
+The `model_training.py` script is used to train and save the model.  
+Once run, it will generate a `model_save/` directory. Use this along with `pyserver.py` to run the server.
 
-After running the server, to observe prediction results perform on terminal:
+After starting the server, you can test predictions from the terminal with:
+
+```bash
 curl -X POST http://127.0.0.1:5000/predict \
-     -H "Content-Type: application/json" \
-     -d '{"text": "insert example text"}'
+-H "Content-Type: application/json" \
+-d '{"text": "insert example text"}'
 
 
