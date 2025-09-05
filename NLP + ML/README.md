@@ -6,3 +6,5 @@ Guide to download dataset:
 - `pan12-sexual-predator-identification-training-corpus-predators-2012-05-01.txt`  
 - `pan12-sexual-predator-identification-test-corpus-2012-05-17.xml`  
 
+The model_training.py is the training file used to save the model. Once run, you'll obtain model_save
+Use these files to run pyserver.py
