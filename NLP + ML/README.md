@@ -8,3 +8,10 @@ Guide to download dataset:
 
 The model_training.py is the training file used to save the model. Once run, you'll obtain model_save
 Use these files to run pyserver.py
+
+After running the server, to observe prediction results perform on terminal:
+curl -X POST http://127.0.0.1:5000/predict \
+     -H "Content-Type: application/json" \
+     -d '{"text": "insert example text"}'
+
+
